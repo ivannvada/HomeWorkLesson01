@@ -7,18 +7,16 @@
 1.Создаем рандомное трехзначное число
 2.Удаляем вторую цифру этого числа*/
 
-int GetRandomValue()
+int getRandomValue()
 {
-    return new Random().Next(100, 999);
+return new Random().Next(100, 1000);
 }
 
-int DeliteTwoNumber(int Number)
+int DeleteSecondNumber(int number)
 {
-    return (Number / 100) * 10 + (Number % 10);
+return (number / 100) * 10 + (number % 10);
 }
 
-int Number = GetRandomValue();
-int result = DeliteTwoNumber(Number);
-
-Console.WriteLine($"Загаданное число {Number}, стало {result}");
-
+int number = getRandomValue();
+int result = DeleteSecondNumber(number);
+Console.WriteLine($"Было {number}, стало {result}.");

@@ -10,7 +10,7 @@
 1 - Ввыводим случайное число из отрезка 10 - 99.
 2 - показываем наибольшую цифру.*/
 
-int GetRandomNumber(int leftBound, int rightBound)
+int getRandomNumber(int leftBound, int rightBound)
 {
     int result = 0;
     Random rnd = new Random();
@@ -27,6 +27,6 @@ int GetMaxDigitOfNumber(int number)
     else
         return secontDigit;
 }
-int number = GetRandomNumber(10, 99);
+int number = getRandomNumber(10, 99);
 int MaxDigit = GetMaxDigitOfNumber(number);
 Console.WriteLine($"Максимальная цифра числа {number} = {MaxDigit}");

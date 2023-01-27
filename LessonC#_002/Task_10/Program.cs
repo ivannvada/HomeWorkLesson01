@@ -4,5 +4,7 @@
 782 -> 8
 918 -> 1*/
 
-
-    
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(number);
+Console.WriteLine("Вторая цифра этого числа "+stringNumber[1]);
